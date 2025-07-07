@@ -5,7 +5,11 @@
 */
 
 function isAnagram(str1, str2) {
-
+ function clean(str) {
+  // Moon star moon star ["moon", "star"], "moonstar" ["m", "o", "o"...]
+  return str.toLowerCase().split(' ').join('').split('').sort().join('')
+ }
+ return clean(str1) == clean(str2);
 }
 
 module.exports = isAnagram;

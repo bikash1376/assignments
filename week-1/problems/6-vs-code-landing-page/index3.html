@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Parisienne&family=Petit+Formal+Script&family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <title>Cursor</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: inherit;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: whitesmoke;
+      font-family: 'Roboto Mono', monospace;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.5;
+    }
+
+    ::selection {
+      background-color: #1c1c1c;
+      color: #fff;
+    }
+
+    nav {
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      background-color: #000000;
+      padding: 12px 20px;
+      border-radius: 20px;
+      margin: 30px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 50px;
+    }
+
+    .logo h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      flex: 1;
+    }
+
+    .buttons-nav {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    button {
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dark-btn {
+      background-color: #000;
+      border: 1px solid #565555;
+      color: white;
+    }
+
+    .main {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .bg-image {
+      position: absolute;
+      top: 18%;
+      left: 20px;
+      right: 20px;
+      bottom: 50%;
+      height: calc(100vh - 20px);
+      border-radius: 20px;
+      opacity: 0.5;
+      z-index: -1;
+      background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 1) 0%,
+        rgba(253, 29, 29, 1) 50%,
+        rgba(252, 176, 69, 1) 100%
+      );
+    }
+
+    .bg h1 {
+      margin-top: 100px;
+      font-size: 4rem;
+      letter-spacing: -2px;
+      margin-bottom: 10px;
+    }
+
+    .bg p {
+      font-size: 1.2rem;
+      margin-bottom: 2em;
+    }
+
+    .buttons-hero {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+a:hover {
+    color:pink
+}
+
+    @media (max-width: 768px) {
+      nav {
+        margin: 20px;
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .links {
+        justify-content: flex-start;
+      }
+
+      .bg h1 {
+        font-size: 2.5rem;
+        letter-spacing: -1px;
+      }
+
+      .bg p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <img src="https://code.visualstudio.com/assets/home/language-powershell.png" alt="Powershell Logo" />
+      <h1>CURSOR</h1>
+    </div>
+
+    <div class="links">
+      <a href="#">Docs</a>
+      <a href="#">Blog</a>
+      <a href="#">Extensions</a>
+      <a href="#">FAQ</a>
+    </div>
+
+    <div class="buttons-nav">
+      <button class="dark-btn">Sign in</button>
+      <button>Download</button>
+    </div>
+  </nav>
+
+  <div class="main">
+    <div class="bg-image"></div>
+    <div class="bg">
+      <h1>The AI Code Editor</h1>
+      <p>Built to make you extraordinarily productive, Cursor is the best way to code with AI.</p>
+    </div>
+
+    <div class="buttons-hero">
+      <button>Download For Windows</button>
+      <button class="dark-btn">Download</button>
+    </div>
+  </div>
+ 
+
+</body>
+</html>
